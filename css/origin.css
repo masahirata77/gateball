@@ -1,0 +1,116 @@
+#tapa09, #tapa10, #tapa00 {
+    background: none
+}
+
+#fondo00, #fondo0, #margenabajo, .botonrojo, #fondoarribaizquierda,
+#margenarriba, #botonsuperior, #botonenout, #textoMensaje, #textoMensaje2,
+#tapa02, #tapa04, #tapa06, #tapa08, #tapaTodoBlanco, .botonblanco .bolaenout {
+    background: #b11
+}
+
+.botonCambioTiempo, #fondo1, .botonblanco, #botonReinicio, #botoninferior,
+.botonrojo .bolaenout, #tapaParaConfig, #tapaParaTiempo, #tapaTodoRojo,
+.tapaEntreBotonRojo, .btnSetup,#tapa01, #tapa03, #tapa05, #tapa07 {
+    background: #fff
+}
+
+
+
+.btnSetup:active, #botonReinicio:active, .botonrojo:active, .botonblanco:active,
+#nombreBlanco:active, #botonsuperior:active, #botoninferior:active,
+#botonenout:active, #nombreRojo:active, .botonlateral:active, #botontiempo:active,
+.botonCambioTiempo:active, #botonReinicio:active {
+    background: #faa
+}
+
+#puntostotalesblanco, #nombreBlanco, #textotiempo, .botonblanco .capanumeral, .botonblanco .bolapuntos, .botonrojo .bolaenout {
+    color: #b11
+}
+
+#puntostotalesrojo, #nombreRojo, #textoMensaje, #textoMensaje2,
+.botonrojo .capanumeral,.botonrojo .bolapuntos, #textoesquina1, #textoesquina2,
+.botonblanco .bolaenout {
+    color: #fff
+}
+
+#botonReinicio svg, #botoninferior svg, #tapadorcentroizquierda, .botonlateral svg, .botonCambioTiempo svg, .btnSetup svg {
+    fill: #b11
+}
+
+#tapadorcentroderecha, #botonsuperior svg, #botonenout svg {
+    fill: #fff
+}
+
+.tapEntreBtn {
+    border: 0
+}
+
+.botonCambioTiempo, .btnSetup,.btnRound,.btnRoundMini,.barraganadora {
+    border-style: solid;
+}
+
+#botonsuperior, #barraroja {
+   border-color: #fff
+}
+
+#botonenout, #barrablanca, .botonCambioTiempo,.btnSetup,
+#botonReinicio, #botoninferior {
+   border-color: #b11
+}
+
+
+#tapa09 {
+    height: 0;
+    width: 0
+}
+
+#tapa02, #tapa04, #tapa06, #tapa08 {
+    width: .8%;
+    height: 23.4%
+}
+
+#tapa01, #tapa03, #tapa05, #tapa07 {
+  top: 53.3%;
+  height: 22.8%;
+    width: .8%
+}
+
+#tapa01, #tapa02 {
+    left: 19.6%
+}
+
+#tapa03, #tapa04 {
+    left: 39.6%
+}
+
+#tapa05, #tapa06 {
+    left: 59.6%
+}
+
+#tapa07, #tapa08 {
+    left: 79.6%
+}
+
+#tapaTodoBlanco {
+    bottom: 23.04%;
+    height: .64%
+}
+
+#tapaTodoRojo {
+    bottom: 23.68%;
+    height: .64%
+}
+
+
+@media (max-aspect-ratio:8/10) {
+    .btnRoundMini,.btnRound, .botonCambioTiempo {
+        border-width: .8vw
+    }
+}
+
+@media (min-aspect-ratio:8/10) {
+
+    .btnRoundMini, .btnRound, .botonCambioTiempo {
+        border-width: .64vh
+    }
+}

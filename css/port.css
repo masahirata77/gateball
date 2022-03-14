@@ -1,0 +1,277 @@
+.giro90 {
+    transform: rotate(0deg)
+}
+
+#fondoarribaizquierda,#barraroja,#boton1,#boton2,#botonizquierdo {
+    left: 0
+}
+
+#botonderecho {
+    right: 0
+}
+
+#tapaTodoRojo, #tapaTodoBlanco {
+    width: 100%
+}
+
+#fondoarribaizquierda {
+    height: 32%;
+    width: 50%
+}
+
+#fondoCenterForConfigFullScreen {
+    height: 0;
+    width: 0
+}
+
+#margenarriba {
+  height: .64%;
+   width:100%;
+   border: 0
+}
+
+#margenabajo {
+    height: .8%
+}
+
+.nombreDelEquipo {
+    top: .64%;
+}
+
+.nombreDelEquipo, .puntostotales {
+    width: 40%
+}
+
+.puntostotales {
+    top: 6.8%;
+    height: 10%
+}
+
+#puntostotalesblanco, #puntostotalesrojo {
+    line-height: 82%
+}
+
+#puntostotalesrojo, #nombreRojo {
+    left: 2%
+}
+
+#puntostotalesblanco, #nombreBlanco {
+    right: 2%;
+    left: auto
+}
+
+.barraganadora {
+    top: 29.024%;
+    height: 0;
+    width: 50%;
+    border: 0;
+    border-radius: 0
+}
+
+#barraroja, #barrablanca {
+    background: none
+}
+
+#barrablanca {
+    left: auto;
+    right: 0
+}
+
+.txtMsn {
+    top: 33.5%;
+    left:0;
+    width: 100%;
+    border-radius: 0
+}
+
+
+#botontiempo {
+    top: 38.24%;
+    left: 18%;
+    height: 14.4%;
+    width: 64%;
+}
+
+#boton1, #boton3, #boton5, #boton7, #boton9 {
+    top: 53.328%
+}
+
+#boton2, #boton4, #boton6, #boton8, #boton0 {
+    top: 76.328%
+}
+
+#boton3, #boton4 {
+    left: 20%
+}
+
+#boton5, #boton6 {
+    left: 40%
+}
+
+#boton7, #boton8 {
+    left: 60%
+}
+
+#boton9, #boton0 {
+    left:auto;
+    right: 0
+}
+
+#tapadorcentroizquierda, #tapadorcentroderecha {
+    width: 17.5%
+}
+
+#tapaTodoRojo, #tapaTodoBlanco {
+    border-right-width: 0;
+    border-left-width: 0
+}
+
+#tapa00, #tapa01, #tapa02, #tapa03, #tapa04, #tapa05,
+#tapa06, #tapa07, #tapa08, #tapa09, #tapa10 {
+    border-top-width: 0
+}
+
+#tapa00 {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 0
+}
+
+#tapa02, #tapa04, #tapa06, #tapa08, #tapa10 {
+    top: auto;
+    bottom: 0;
+}
+
+#tapa10 {
+    width: 0
+}
+
+#tapaL {
+    border-left-width: 0
+}
+
+#tapaR {
+  width: 0;
+    border-right-width: 0
+}
+
+#tapaTodoBlanco, #tapaTodoRojo {
+    top: auto;
+    left: 0
+}
+
+#botonderecho, #botonizquierdo {
+    top: 39.52%;
+    border-radius:0;
+}
+
+#botonizquierdo {
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+#botonderecho {
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+#botoncambiotemas, #botonvibracion, #botonsonido {
+    top: 39.5%
+}
+
+#botonvibracion {
+    left: 42.5%
+}
+
+#botonsonido {
+    left: 68.38%
+}
+
+#botonReinicio {
+    top: 72%;
+}
+
+#botonMen1sec, #botonMen5sec, #botonMas1sec, #botonMas5sec {
+    left: auto;
+}
+
+#botonMas1min {
+      top: 30.16%;
+    left: 27%
+}
+
+#botonMen1min {
+    top: 52.8%;
+    left: 27%
+}
+
+#botonMas1sec {
+    top: 30.16%;
+    right: 27%
+}
+
+#botonMen1sec {
+    top: 52.8%;
+    right: 27%
+}
+
+#botonMas5min {
+    top: 19.2%;
+    left: 16%
+}
+
+#botonMen5min {
+    top: 64%;
+    left: 16%
+}
+
+#botonMas5sec {
+    top: 19.2%;
+    right: 16%
+}
+
+#botonMen5sec {
+  top: 64%;
+    right: 16%
+}
+
+#textoesquina1 {
+    bottom: .512%
+}
+
+@media (max-aspect-ratio:8/10) {
+  .nombreDelEquipo {
+      border-radius: 4vw
+  }
+
+  .barraganadora {
+    border-top-width: 2vw
+  }
+
+  .puntostotales {
+      font-size: 32vw
+  }
+
+  #botontiempo {
+      border-radius: 10vw;
+  }
+}
+
+@media (min-aspect-ratio:8/10) {
+  .nombreDelEquipo {
+      border-radius: 3.2vh
+  }
+
+  .barraganadora {
+      border-top-width: 1.6vh
+  }
+
+  .puntostotales {
+      font-size: 25.6vh;
+  }
+
+  #botontiempo {
+      border-radius: 8vh;
+  }
+}

@@ -1,0 +1,197 @@
+#fondoCentralOnlyForOriland,#margenarriba,#tapaTodoBlanco, #tapaTodoRojo,
+#tapa11, #tapa01, #tapa03, #tapa05, #tapa07, #tapa09,#tapaL,
+#tapa00, #tapa02, #tapa04, #tapa06, #tapa08, #tapa10,#tapaR
+ {
+    background: none
+}
+
+.botonCambioTiempo, #fondo00, #fondo0, #fondo1, #tapaParaConfig, #botonsuperior,
+#tapaParaTiempo, #botoninferior, .botonrojo, .botonblanco, #botonenout:active,
+#fondoarribaizquierda, #textoMensaje, #botonReinicio,.btnSetup {
+    background: #000
+}
+
+#botonenout, .botonrojo .bolaenout, .botonrojo:active, .botonblanco:active,
+#botontiempo:active, .botonlateral:active, #botonsuperior:active,
+.botonCambioTiempo:active, #nombreRojo:active, #nombreBlanco:active,
+#botoninferior:active, #botonsuperior:active,#textoMensaje2,
+.btnSetup:active,#botonReinicio:active {
+  background: #b11
+}
+
+#barrablanca {
+    background: #fff
+}
+
+#barraroja {
+    background: #faa
+}
+
+.botonblanco .capanumeral, .botonblanco .bolapuntos {
+    color: #b11
+}
+
+#textotiempo, #puntostotalesblanco, #nombreBlanco, .botonrojo .bolaenout,
+.botonblanco .bolaenout, .botonblanco .capanumeral, .botonblanco .bolapuntos,
+#textoMensaje2,#textoMensaje, .botonrojo .bolaenout {
+    color: #fff
+}
+
+#puntostotalesrojo, #nombreRojo, .botonrojo .capanumeral, .botonrojo .bolapuntos,
+#textoesquina1, #textoesquina2 {
+    color: #faa
+}
+
+#tapadorcentroizquierda, #tapadorcentroderecha {
+    fill: none
+}
+
+#botonenout svg {
+    fill: #b11
+}
+
+#botonsuperior svg,#botoninferior svg ,#botonenout svg,#botonReinicio svg,
+.botonCambioTiempo svg,.btnSetup svg,.botonlateral svg  {
+    fill: #fff
+}
+
+.tapEntreBtn,#margenarriba,#tapa00 {
+    border: 0
+}
+
+#margenarriba,.btnRound,.btnRoundMini, .botonCambioTiempo,.tapEntreBtn,
+#tapa11, #tapa01, #tapa03, #tapa05, #tapa07, #tapa09, #tapa10 {
+    border-style: dashed
+}
+
+#botonsuperior,#botonenout, #botoninferior, #botonReinicio, .botonCambioTiempo,
+.btnSetup,.tapEntreBtn,#margenarriba,
+#tapa11, #tapa01, #tapa03, #tapa05, #tapa07, #tapa09, #tapa10 {
+    border-color: #faa
+}
+
+#tapa11, #tapa01, #tapa03, #tapa05, #tapa07, #tapa09 {
+    left: auto;
+    right: 0;
+    width: 28.7%;
+    height: 0
+}
+
+#margenarriba, #tapa02, #tapa04, #tapa06, #tapa08, #tapa10 {
+  left: 0;
+  right: auto;
+  width: 28.7%;
+  height: 0;
+}
+
+#tapa11 {
+    top: 0
+}
+
+#tapa01, #tapa02 {
+    top: 15.84%
+}
+
+#tapa03, #tapa04 {
+    top: 31.84%
+}
+
+#tapa05, #tapa06 {
+    top: 47.84%
+}
+
+#tapa07, #tapa08 {
+    top: 63.84%
+}
+
+#tapa09, #tapa10 {
+    top: 79.84%
+}
+
+#tapaTodoBlanco, #tapaTodoRojo {
+    top: 0;
+    height: 79.7%;
+    width: 0
+}
+
+#tapaTodoRojo {
+    left: 71.2%
+}
+
+#tapaTodoBlanco {
+    left: 28.6%
+}
+
+#tapaL,#tapaR {
+  height: 80%
+}
+
+#tapaL {
+  left: 0
+}
+
+#tapaR {
+    right: 0;
+    width: 0
+}
+
+#fondoarribaizquierda {
+    left: 50%;
+    width: 50%;
+    height: 100%;
+}
+
+#fondoCentralOnlyForOriland {
+    height: 0;
+    width: 0
+}
+
+
+
+
+
+/*****************************************************/
+/**************Ajustado desde el ancho****************/
+/*****************************************************/
+@media (max-aspect-ratio:8/10) {
+    #margenarriba,#tapa01, #tapa03, #tapa05, #tapa07, #tapa09, #tapa02, #tapa04,
+     #tapa06, #tapa08, #tapa10, #tapa00, #tapa11 {
+        border-top-width: .4vw
+    }
+
+    #tapaTodoBlanco,#tapaL {
+        border-left-width: .4vw
+    }
+
+    #tapaTodoRojo,#tapaR {
+        border-right-width: .4vw
+    }
+
+    .btnRoundMini, .btnRound, .botonCambioTiempo {
+        border-width: .4vw
+    }
+
+}
+
+/*****************************************************/
+/***************Ajustado desde lo alto****************/
+/*****************************************************/
+@media (min-aspect-ratio:8/10) {
+    #margenarriba,#tapa01, #tapa03, #tapa05, #tapa07, #tapa09, #tapa02, #tapa04,
+    #tapa06, #tapa08, #tapa10, #tapa00, #tapa11 {
+        border-top-width: .32vh
+    }
+
+    #tapaTodoBlanco,#tapaL {
+        border-left-width: .32vh
+    }
+
+    #tapaTodoRojo,#tapaR{
+        border-right-width: .32vh
+    }
+
+    .btnRoundMini, .btnRound, .botonCambioTiempo {
+        border-width: .32vh
+    }
+
+}

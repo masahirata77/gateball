@@ -1,0 +1,187 @@
+.giro90 {
+    transform: rotate(90deg);
+}
+
+.nombreDelEquipo {
+    top: 13.6%;
+    width: 39%;
+}
+
+#nombreRojo {
+    left: 45.5%;
+}
+
+#nombreBlanco {
+    right: 45.5%;
+}
+
+.barraganadora {
+    top: 83.04%;
+    height: 14.4%;
+    width: 4%;
+    border: none;
+}
+
+#barraroja {
+    left: 92%;
+}
+
+#barrablanca {
+    left: 4%;
+}
+
+
+.puntostotales {
+    top: 78.56%;
+    height: 23%;
+    width: 24%
+}
+
+#puntostotalesblanco {
+    left: 1.9%
+}
+
+#puntostotalesrojo {
+    left: 74%
+}
+
+#tapadorcentroizquierda, #tapadorcentroderecha {
+    width: 17%
+}
+
+.txtMsn {
+    top: 64%;
+    left: 24.2%;
+    width: 84%;
+}
+
+#botonizquierdo {
+    top: 34%;
+    left: 42.5%;
+    border-radius: 50%;
+}
+
+#botonderecho {
+    top: 86%;
+    right: 42.5%;
+    border-radius: 50%;
+}
+
+#botontiempo {
+    top: 59%;
+    width: 50%;
+    height: 14%;
+    left: 25.4%;
+    z-index: 0
+}
+
+#boton1, #boton3, #boton5, #boton7, #boton9 {
+    left: 75.7%
+}
+
+#boton2, #boton4, #boton6, #boton8, #boton0 {
+    left: 4.5%
+}
+
+#boton1, #boton2 {
+    top: -3.3%;
+}
+
+#boton3, #boton4 {
+    top: 12.48%
+}
+
+#boton5, #boton6 {
+    top: 28.48%;
+}
+
+#boton7, #boton8 {
+    top: 44.48%;
+}
+
+#boton9, #boton0 {
+    top: 60.48%;
+}
+
+#tapa00, #tapa02, #tapa04, #tapa06, #tapa08, #tapa10 {
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+#tapaTodoBlanco, #tapaTodoRojo{
+    border-top-width:0
+}
+
+
+
+#botonvibracion {
+    top: 59.9%;
+    left: 16.38%;
+}
+
+#botonsonido {
+    top: 80.4%;
+    left: 16.38%;
+}
+
+
+
+#botonReinicio {
+    top: 23%
+}
+
+#botonMen5min, #botonMas5min, #botonMen1min, #botonMas1min {
+    top: 51.6%
+}
+
+#botonMen5sec, #botonMas5sec, #botonMen1sec, #botonMas1sec {
+    top: 72.4%
+}
+
+#botonMen5min, #botonMen5sec {
+    left: 6%
+}
+
+#botonMen1min, #botonMen1sec {
+    left: 19%
+}
+
+#botonMas1min, #botonMas1sec {
+    left: 60%
+}
+
+#botonMas5min, #botonMas5sec {
+    left: 73%
+}
+
+
+/*****************************************************/
+/**************Ajustado desde el ancho****************/
+/*****************************************************/
+@media (max-aspect-ratio:8/10) {
+    .nombreDelEquipo {border-radius: 2.5vw}
+
+    .barraganadora,#botontiempo {  border-radius: 4vw}
+
+    .puntostotales {        font-size: 18vw}
+    #puntostotalesblanco {  line-height: 18vw}
+    #puntostotalesrojo {    line-height: 39vw}
+
+    .txtMsn {  border-radius: 2vw}
+}
+
+
+/*****************************************************/
+/*************Ajustado desde la altura****************/
+/*****************************************************/
+@media (min-aspect-ratio:8/10) {
+    .nombreDelEquipo {border-radius: 2vh}
+
+    .barraganadora,#botontiempo {  border-radius: 3.2vh}
+
+    .puntostotales {        font-size: 14.4vh}
+    #puntostotalesblanco {  line-height: 14.4vh}
+    #puntostotalesrojo {    line-height: 31.2vh}
+
+    .txtMsn {  border-radius: 1.6vh}
+}

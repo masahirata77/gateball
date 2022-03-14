@@ -1,0 +1,178 @@
+
+.tapEntreBtn, #tapa00, #tapa11, #margenarriba, #margenabajo {
+    background: none;
+    border: 0;
+}
+
+#margenarriba{
+  border: 0
+}
+
+#fondo00, #fondo0, #tapaTodoBlanco, #tapa02, #tapa04, #tapa06, #tapa08, #tapa10, #botonReinicio,
+.botonrojo, #fondoarribaizquierda, #botoninferior, .botonblanco .bolaenout, #tapaParaConfig,
+#barrablanca, .botonCambioTiempo, #fondoCentralOnlyForOriland, #margenarriba, .btnSetup,
+#tapaTodoBlanco, .tapaEntreBotonBlanco {
+    background: #b11
+}
+
+#fondo1, #tapaTodoRojo, #tapaR, #tapa01, #tapa03, #tapa05, #tapa07,
+#tapa09, #tapa11, #barraroja, #textoMensaje, #textoMensaje2,.tapaEntreBotonRojo,
+.botonblanco, #tapaParaTiempo, #botonenout, .botonrojo .bolaenout, #botonsuperior{
+    background: #fff
+}
+
+
+.btnSetup:active, #nombreRojo:active, #nombreBlanco:active, .botonrojo:active, .botonblanco:active,
+#botonenout:active, #botontiempo:active, #botonsuperior:active, #botoninferior:active,
+#botonReinicio:active, .botonCambioTiempo:active, .botonlateral:active,.botonCambioTiempo:active{
+    background: #faa
+}
+
+.btnRoundMini,.btnRound, .botonCambioTiempo{
+    border-style: solid
+}
+
+
+#botonsuperior {
+    border-color: #b11
+}
+
+.btnSetup, .botonCambioTiempo, #botonReinicio, #botoninferior, #botonenout {
+    border-color: #fff
+}
+
+
+.botonblanco .capanumeral, .botonblanco .bolapuntos, #nombreBlanco,
+.botonrojo .bolaenout,#puntostotalesblanco, #textoMensaje, #textoMensaje2 {
+    color: #b11;
+}
+
+#puntostotalesrojo, #nombreRojo, .botonrojo .capanumeral, .botonrojo .bolapuntos,
+#textotiempo,.botonblanco .bolaenout {
+    color: #fff
+}
+
+
+#botonenout svg, #botonsuperior svg, #tapadorcentroderecha {
+    fill: #b11
+}
+
+#botoninferior svg, .botonlateral svg, #tapadorcentroizquierda, .botonCambioTiempo svg ,
+.btnSetup svg,#botonReinicio svg,.botonCambioTiempo svg{
+    fill: #fff
+}
+
+
+#fondoarribaizquierda {
+    width: 50%;
+    height: 100%;
+    left: 50%;
+}
+
+#tapaTodoBlanco, #tapaTodoRojo, #tapaR {
+    top: 0;
+    height: 80.16%;
+}
+
+
+#tapa11{
+    top: 0
+}
+
+#tapaTodoRojo {
+    left: 70.8%;
+    width: .8%;
+}
+
+#tapaR {
+    right: -.8%;
+    width: .8%;
+}
+
+#tapaTodoBlanco {
+    left: 28.8%;
+    width: .8%;
+}
+
+
+#tapa01, #tapa03, #tapa05, #tapa07, #tapa09, #tapa11 {
+    left: auto;
+    right: 0;
+    width: 29.1%;
+    height: 0.64%;
+}
+
+
+#tapa02, #tapa04, #tapa06, #tapa08, #tapa10 {
+    left: 0;
+    width: 29.1%;
+    height: 0.64%;
+}
+
+#tapa01, #tapa02 {
+    top: 15.52%;
+}
+
+#tapa03, #tapa04 {
+    top: 31.52%;
+}
+
+#tapa05, #tapa06 {
+    top: 47.52%;
+}
+
+#tapa07, #tapa08 {
+    top: 63.52%;
+}
+
+#tapa09, #tapa10 {
+    top: 79.52%;
+}
+
+#margenarriba {
+    left: 0
+}
+
+#margenarriba {
+    height: .64%;
+    width:50%;
+}
+
+#fondoCentralOnlyForOriland {
+    height: 68.1%;
+    width: 30%;
+    left: 37%;
+    bottom: 0;
+}
+
+
+/*****************************************************/
+/**************Ajustado desde el ancho****************/
+/*****************************************************/
+@media (max-aspect-ratio:8/10) {
+    #fondoCentralOnlyForOriland {
+        border-top-left-radius: 8vw;
+    }
+
+    .btnRoundMini, .btnRound, .botonCambioTiempo {
+        border-width: .8vw
+    }
+
+}
+
+/*****************************************************/
+/*************Ajustado desde la altura****************/
+/*****************************************************/
+@media (min-aspect-ratio:8/10) {
+    #fondoCentralOnlyForOriland {
+        border-top-left-radius: 6.4vh;
+    }
+
+    .btnRoundMini, .btnRound, .botonCambioTiempo {
+        border-width: .64vh
+    }
+}
+
+#botontiempo{
+    z-index:1
+}

@@ -1,0 +1,150 @@
+#tapaTodoBlanco, #tapaTodoRojo, #margenabajo,.tapaEntreBotonRojo,
+#tapa00, #tapa02, #tapa04, #tapa06, #tapa08, #tapa10,
+#tapa01, #tapa03, #tapa05, #tapa07  {
+    background: none
+}
+
+#textoMensaje,.botonCambioTiempo,#fondo00, #fondo1, #tapaParaConfig,.btnSetup,
+#botonsuperior, #tapaParaTiempo, #botoninferior, .botonrojo, .botonblanco,
+#botonenout:active, #fondoarribaizquierda, #margenarriba,#botonReinicio {
+    background: #000
+}
+
+#botonenout, .botonrojo .bolaenout, .botonrojo:active, .botonblanco:active,
+#textoMensaje2,#botontiempo:active, #botonReinicio:active, .botonlateral:active,
+#botonsuperior:active, #botoninferior:active, .botonCambioTiempo:active,
+#nombreRojo:active,#nombreBlanco:active,.botonprincipal:active,.btnSetup:active{
+    background: #b11
+}
+
+#textotiempo, #puntostotalesblanco, #nombreBlanco, .botonrojo .bolaenout,
+.botonblanco .bolaenout, .botonblanco .capanumeral, .botonblanco .bolapuntos,
+#textoMensaje, #textoMensaje2  {
+    color: #fff
+}
+
+#puntostotalesrojo,#nombreRojo,.botonrojo .capanumeral, .botonrojo .bolapuntos,
+#textoesquina1, #textoesquina2 {
+    color: #faa
+}
+
+#tapadorcentroderecha, #tapadorcentroizquierda {
+    fill: transparent
+}
+
+#botonReinicio svg, .botonlateral svg,.btnSetup svg,
+#botoninferior svg, .botonCambioTiempo svg {
+    fill: #fff
+}
+
+.botonrojo, .botonrojo .bordebotonnumeral, .botonblanco,
+.botonblanco .bordebotonnumeral,.tapEntreBtn {
+    border: 0
+}
+
+.barraganadora {
+    border-top-style: dotted
+}
+
+#tapa00, .btnRoundMini,.btnRound, .botonCambioTiempo,.tapEntreBtn,.btnSetup {
+  border-style: dashed;
+  border-color: #faa;
+}
+
+#barraroja, #botonsuperior, #botoninferior, #botonenout, #botonReinicio {
+    border-color: #faa
+}
+
+#barrablanca {
+    border-color: #fff
+}
+
+#tapa10 {
+    left:auto;
+    right: 0
+}
+
+#tapaTodoBlanco, #tapaTodoRojo {
+    height: 0
+}
+
+#tapaTodoBlanco {
+    bottom: 23.52%
+}
+
+#tapaTodoRojo {
+    bottom: 46.56%
+}
+
+#margenabajo {
+    bottom: -.32%
+}
+
+
+#tapa00, #tapa02, #tapa04, #tapa06, #tapa08, #tapa10 {
+    bottom: .64%
+}
+
+#tapa00, #tapa02, #tapa04, #tapa06, #tapa08, #tapa10 {
+    height: 46%
+}
+
+#tapa02 {
+    left: 19.8%
+}
+
+#tapa04 {
+    left: 39.8%
+}
+
+#tapa06 {
+    left: 59.8%
+}
+
+#tapa08 {
+    left: 79.8%
+}
+
+@media (max-aspect-ratio:8/10) {
+    .btnRoundMini, .botonCambioTiempo,.btnRound {
+        border-width: .4vw
+    }
+
+    #tapaTodoBlanco,#tapaTodoRojo {
+        border-top-width: .4vw
+    }
+
+    #margenabajo {
+        border-top: .4vw dashed #faa;
+    }
+
+    #tapa00, #tapa02, #tapa04, #tapa06, #tapa08 {
+        border-left-width: .4vw
+    }
+
+    #tapa10 {
+        border-right-width: .4vw
+    }
+}
+
+@media (min-aspect-ratio:8/10) {
+    .btnRoundMini, .botonCambioTiempo,.btnRound {
+        border-width: .32vh
+    }
+
+    #tapaTodoBlanco,#tapaTodoRojo {
+        border-top-width: .32vh
+    }
+
+    #margenabajo {
+        border-top: .32vh dashed #faa;
+    }
+
+    #tapa00, #tapa02, #tapa04, #tapa06, #tapa08 {
+        border-left-width: .32vh
+    }
+
+    #tapa10 {
+        border-right-width: .32vh
+    }
+}

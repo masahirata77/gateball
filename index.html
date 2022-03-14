@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Aplicacion para marcar puntajes de Gateball">
+    <meta name="author" content="aliphomen01">
+    <meta name="keywords:" content="Gateball, marcador, puntaje, score, scorecount">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#000">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/origin.css">  -->
+    <!-- <link rel="stylesheet" href="css/dark.css"> -->
+
+
+
+
+    <link rel="icon" type="image/gif" href="ico/favicon.gif">
+
+
+    <svg>
+        <!-- icono OUT -->
+        <g id="iconoafuera">
+            <clipPath id="recortediagonal"><path d="m0 0v24h24z" /><path d="M24 0v20.18L3.82 0z" /></clipPath><!-- recorte diagonal -->
+            <circle cx="12" cy="12" r="9" clip-path="url('#recortediagonal')" />
+            <polygon id="barradiagonal" points="19.73,21 21,19.73 4.27,3 3,4.27" /><!-- barra diagonal -->
+        </g>
+    </svg>
+
+    <svg>
+        <!-- icono vibracion -->
+        <path id="iconovibracion" d="M0 15h2V9H0v6zm3 2h2V7H3v10zm19-8v6h2V9h-2zm-3 8h2V7h-2v10zM16.5 3h-9C6.67 3 6 3.67 6 4.5v15c0 .83.67 1.5 1.5 1.5h9c.83 0 1.5-.67 1.5-1.5v-15c0-.83-.67-1.5-1.5-1.5zM16 19H8V5h8v14z" />
+    </svg>
+
+    <svg>
+        <!-- icono cierre -->
+        <path id="iconocierre" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+    </svg>
+
+    <svg>
+        <!-- icono arriba -->
+        <polygon id="svgArriba" points="16,10 24,24 8,24 " />
+    </svg>
+
+    <svg>
+        <!-- icono doble arriba -->
+        <g id="svgDobleArriba">
+            <path d="M 16 7 L 8 21 L 9.7148438 21 L 16 10 L 22.285156 21 L 24 21 L 16 7 z " />
+            <polygon points="16,13 24,27 8,27 " />
+        </g>
+    </svg>
+
+
+    <title>Gateball Nikki</title>
+</head>
+
+  <body>
+      <div class="loader"></div>
+
+      <div id='fondo0'>
+          <div id="fondo00"></div>
+
+
+          <div id="textoesquina1">
+              por Andres Hirata
+          </div>
+
+          <div id="textoesquina2">
+              por Andres Hirata
+          </div>
+
+          <div id='fondo1'>
+              <!-- zona total donde estan todos los componentes -->
+              <!-- ******************************************** -->
+              <!-- *****************Main Display*************** -->
+              <!-- ******************************************** -->
+
+              <div id="fondoarribaizquierda"></div>
+
+              <button class='giro90' id='botontiempo'>
+                  <div id='textotiempo'></div>
+              </button>
+
+              <button class='giro90 botonrojo' id='boton1'>
+                  <div class='capanumeral'>1</div>
+                  <div class='bolaenout' id='out1'></div>
+                  <div class='bolapuntos' id='puntos1'></div>
+              </button>
+
+              <button class='giro90 botonblanco' id='boton2'>
+                  <div class='capanumeral'>2</div>
+                  <div class='bolaenout' id='out2'></div>
+                  <div class='bolapuntos' id='puntos2'></div>
+              </button>
+
+              <button class='giro90 botonrojo' id='boton3'>
+                  <div class='capanumeral'>3</div>
+                  <div class='bolaenout' id='out3'></div>
+                  <div class='bolapuntos' id='puntos3'></div>
+              </button>
+
+              <button class='giro90 botonblanco' id='boton4'>
+                  <div class='capanumeral'>4</div>
+                  <div class='bolaenout' id='out4'></div>
+                  <div class='bolapuntos' id='puntos4'></div>
+              </button>
+
+              <button class='giro90 botonrojo' id='boton5'>
+                  <div class='capanumeral'>5</div>
+                  <div class='bolaenout' id='out5'></div>
+                  <div class='bolapuntos' id='puntos5'></div>
+              </button>
+
+              <button class='giro90 botonblanco' id='boton6'>
+                  <div class='capanumeral'>6</div>
+                  <div class='bolaenout' id='out6'></div>
+                  <div class='bolapuntos' id='puntos6'></div>
+              </button>
+
+              <button class='giro90 botonrojo' id='boton7'>
+                  <div class='capanumeral'>7</div>
+                  <div class='bolaenout' id='out7'></div>
+                  <div class='bolapuntos' id='puntos7'></div>
+              </button>
+
+              <button class='giro90 botonblanco' id='boton8'>
+                  <div class='capanumeral'>8</div>
+                  <div class='bolaenout' id='out8'></div>
+                  <div class='bolapuntos' id='puntos8'></div>
+              </button>
+
+              <button class='giro90 botonrojo' id='boton9'>
+                  <div class='capanumeral'>9</div>
+                  <div class='bolaenout' id='out9'></div>
+                  <div class='bolapuntos' id='puntos9'></div>
+              </button>
+
+              <button class='giro90 botonblanco' id='boton0'>
+                  <div class='capanumeral'>10</div>
+                  <div class='bolaenout' id='out0'></div>
+                  <div class='bolapuntos' id='puntos0'></div>
+              </button>
+
+              <div class='giro90 puntostotales' id='puntostotalesrojo'></div>
+              <div class='giro90 puntostotales' id='puntostotalesblanco'></div>
+
+              <div class='barraganadora' id="barraroja"></div>
+              <div class='barraganadora' id="barrablanca"></div>
+
+
+              <div class='tapEntreBtn' id='tapa00'></div>
+              <div class='tapEntreBtn tapaEntreBotonRojo' id='tapa01'></div>
+              <div class='tapEntreBtn tapaEntreBotonRojo' id='tapa03'></div>
+              <div class='tapEntreBtn tapaEntreBotonRojo' id='tapa05'></div>
+              <div class='tapEntreBtn tapaEntreBotonRojo' id='tapa07'></div>
+              <div class='tapEntreBtn tapaEntreBotonRojo' id='tapa09'></div>
+
+              <div class='tapEntreBtn tapaEntreBotonBlanco' id='tapa02'></div>
+              <div class='tapEntreBtn tapaEntreBotonBlanco' id='tapa04'></div>
+              <div class='tapEntreBtn tapaEntreBotonBlanco' id='tapa06'></div>
+              <div class='tapEntreBtn tapaEntreBotonBlanco' id='tapa08'></div>
+              <div class='tapEntreBtn tapaEntreBotonBlanco' id='tapa10'></div>
+              <div class='tapEntreBtn' id='tapa11'></div>
+
+              <div class='tapEntreBtn tapaBordeBoton' id='tapaTodoRojo'></div>
+              <div class='tapEntreBtn tapaBordeBoton' id='tapaTodoBlanco'></div>
+              <div class='tapEntreBtn' id='tapaL'></div>
+              <div class='tapEntreBtn' id='tapaR'></div>
+
+
+
+
+              <svg id="tapadorcentroizquierda" viewBox="0 0 7 9"><path d="M7 9l-7 0 0 -9c0,4.5 7.5,3 7,9z" /></svg>
+              <svg id="tapadorcentroderecha" viewBox="0 0 7 9"><path d="M0 0l7 0 0 8.5c0,-4.5 -7.5,-4.5 -7,-9z" /></svg>
+
+
+
+              <button class='giro90 btnRoundMini' id='botonsuperior'>
+                  <svg id="iconobloqueado" viewBox="0 0 16 32">
+                      <path fill-rule="evenodd" d="M2 11.5l12 0c1.1,0 2,0.9 2,2l0 10c0,1.1 -0.9,2 -2,2l-12 0c-1.1,0 -2,-0.9 -2,-2l0 -10c0,-1.1 0.9,-2 2,-2zm6 5c1.1,0 2,0.9 2,2 0,1.1 -0.9,2 -2,2 -1.1,0 -2,-0.9 -2,-2 0,-1.1 0.9,-2 2,-2z" />
+                      <path fill-rule="nonzero" d="M13 10.456c0,-6.5 -10,-6.6 -10,0l0 2 2 0 0 -2c0,-4 6,-4 6,0l0 5 2 0 0 -5 0 0z" />
+                  </svg>
+
+                  <svg id="iconodesbloqueado" viewBox="0 0 16 32">
+                      <path fill-rule="evenodd" d="M2 12.5l12 0c1.1,0 2,0.9 2,2l0 10c0,1.1 -0.9,2 -2,2l-12 0c-1.1,0 -2,-0.9 -2,-2l0 -10c0,-1.1 0.9,-2 2,-2zm12 12l-11.874 0 0 -9.938 11.874 0 0 10z" />
+                      <circle cx="8" cy="19.5" r="2" />
+                      <path fill-rule="nonzero" d="M13 9.456c0,-6.5 -10,-6.6 -10,0l0 1 2 0 0 -1c0,-4 6,-4 6,0l0 5 2 0 0 -5 0 0z" />
+                  </svg>
+              </button>
+
+              <button class='giro90 btnRound' id='botoninferior'>
+                  <svg id="iconoplay" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+                  <svg id="iconopausa" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" /></svg>
+                  <svg id="iconooutinactivo" viewBox="0 0 24 24"><use xlink:href="#iconoafuera" /></svg>
+              </button>
+
+              <button class='giro90 btnRound' id='botonenout'>
+                  <svg id="iconooutactivo" viewBox="0 0 24 24"><use xlink:href="#iconoafuera" /></svg>
+              </button>
+
+
+              <div id="fondoCentralOnlyForOriland"></div>
+
+              <button class='giro90 nombreDelEquipo' id='nombreRojo'>Rojo</button>
+              <button class='giro90 nombreDelEquipo' id='nombreBlanco'>Blanco</button>
+
+              <div id="margenabajo"></div>
+              <div id="margenarriba"></div>
+
+
+              <!-- ******************************************** -->
+              <!-- ***************Setup Display**************** -->
+              <!-- ******************************************** -->
+
+              <div id="tapaParaConfig"></div>        <!-- los tapa para configuracion -->
+
+
+
+              <button class='giro90 botonlateral' id='botonizquierdo'>
+                  <svg id="iconofullscreen" viewBox="0 0 24 24">
+                      <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" />
+                  </svg>
+                  <svg id="iconoquitarfullscreen" viewBox="0 0 24 24">
+                      <path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z" />
+                  </svg>
+              </button>
+
+              <button class='giro90 botonlateral' id='botonderecho'>
+                  <svg id="iconotuerca" viewBox="0 0 24 24">
+                      <path id="iconodiente" d="M9 7l6 0 -.6 -4.2c-0,-.24 -.24,-.4 -.48,-.4l-3.84 0c-.24,0 -.43,.17 -.47,.4l-.6 4.2zm0 10l6 0 -.6 4.2c-0,.24 -0.23,.4 -.47,.4l-3.84 0c-.24,0 -.43,-.17 -.48,-.4l-.6 -4.2z" />
+                      <use transform="rotate(-60 12 12)" xlink:href="#iconodiente" />
+                      <use transform="rotate(60 12 12)" xlink:href="#iconodiente" />
+                      <path fill-rule="evenodd" d="M12 15.6c-2,0 -3.6,-1.6 -3.6,-3.6 0,-2 1.6,-3.6 3.6,-3.6 2,0 3.6,1.6 3.6,3.6 0,2 -1.6,3.6 -3.6,3.6zm0 3.6c-4,0 -7.2,-3.2 -7.2,-7.2 0,-4 3.2,-7.2 7.2,-7.2 4,0 7.2,3.2 7.2,7.2 0,4 -3.2,7.2 -7.2,7.2z" />
+                  </svg>
+
+                  <svg id="iconocierre2" viewBox="0 0 24 24"><use xlink:href="#iconocierre" /></svg>
+              </button>
+
+
+
+              <button class='giro90 btnSetup btnRoundMini' id='botoncambiotemas'>
+                  <svg viewBox="0 0 32 32"><path d="M 16 0 A 16 16 0 0 0 0 16 A 16 16 0 0 0 16 32 A 16 16 0 0 0 32 16 A 16 16 0 0 0 16 0 z M 16 4 A 12 12 0 0 1 24.480469 7.5195312 L 7.5195312 24.480469 A 12 12 0 0 1 4 16 A 12 12 0 0 1 16 4 z " /></svg>
+              </button>
+
+              <button class='giro90 btnSetup btnRoundMini' id='botonvibracion'>
+                  <svg id="convibracion" viewBox="0 0 24 24"><use xlink:href="#iconovibracion" /></svg>
+                  <svg id="sinvibracion" viewBox="0 0 24 24"><use xlink:href="#iconovibracion" clip-path="url('#recortediagonal')" /><use xlink:href="#barradiagonal" /></svg>
+              </button>
+
+              <button class='giro90 btnSetup btnRoundMini' id='botonsonido'>
+                  <svg id="iconoconsonido" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" /></svg>
+                  <svg id="iconosinsonido" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" /></svg>
+              </button>
+
+              <div class='giro90 txtMsn' id='textoMensaje'></div>
+              <div class='giro90 txtMsn' id='textoMensaje2'></div>
+
+
+              <!-- ******************************************** -->
+              <!-- *****************Time Display*************** -->
+              <!-- ******************************************** -->
+
+              <div id="tapaParaTiempo"></div>	    <!-- los tapa para el tiempo -->
+
+              <button class='giro90 btnRound' id='botonReinicio'>
+                  <svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"></path></svg>
+              </button>
+
+
+
+
+
+
+              <button class='giro90 botonCambioTiempo' id='botonMen5min'>
+                  <svg viewBox="0 0 32 32"><use transform="rotate(-180 16 16)" xlink:href="#svgDobleArriba" /></svg>
+              </button>
+              <button class='giro90 botonCambioTiempo' id='botonMas5min'>
+                  <svg viewBox="0 0 32 32"><use xlink:href="#svgDobleArriba" /></svg>
+              </button>
+              <button class='giro90 botonCambioTiempo' id='botonMen1min'>
+                  <svg viewBox="0 0 32 32"><use transform="rotate(-180 16 16)" xlink:href="#svgArriba" /></svg>
+              </button>
+              <button class='giro90 botonCambioTiempo' id='botonMas1min'>
+                  <svg viewBox="0 0 32 32"><use xlink:href="#svgArriba" /></svg>
+              </button>
+              <button class='giro90 botonCambioTiempo' id='botonMen5sec'>
+                  <svg viewBox="0 0 32 32"><use transform="rotate(-180 16 16)" xlink:href="#svgDobleArriba" /></svg>
+              </button>
+              <button class='giro90 botonCambioTiempo' id='botonMas5sec'>
+                  <svg viewBox="0 0 32 32"><use xlink:href="#svgDobleArriba" /></svg>
+              </button>
+              <button class='giro90 botonCambioTiempo' id='botonMen1sec'>
+                  <svg viewBox="0 0 32 32"><use transform="rotate(-180 16 16)" xlink:href="#svgArriba" /></svg>
+              </button>
+              <button class='giro90 botonCambioTiempo' id='botonMas1sec'>
+                  <svg viewBox="0 0 32 32"><use xlink:href="#svgArriba" /></svg>
+              </button>
+
+
+
+
+
+
+          </div>
+      </div>
+
+      <script src="js/script.js"></script>
+  </body>
+
+
+</html>
